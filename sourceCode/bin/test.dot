@@ -1,0 +1,5 @@
+digraph{
+	node3;
+	node3 [label = "node2"];
+	node1->node3;
+}

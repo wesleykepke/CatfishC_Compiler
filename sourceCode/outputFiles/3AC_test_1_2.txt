@@ -1,0 +1,16 @@
+	// int x;
+	// int y;
+Label_main
+	// void main(){
+	// 	int i = 1;
+		(  ASSIGN,  LOC_V_0,        1,        -)
+	// 	int c;
+	// 	int a[5];
+	// 	int b[3][4];
+	// 	i = 2;
+		(  ASSIGN,  LOC_V_0,        2,        -)
+	// 	c = i;
+		(  ASSIGN,  LOC_V_4,  LOC_V_0,        -)
+	// 	c = i + 4;
+		(    PLUS,     IT_0,  LOC_V_0,        4)
+		(  ASSIGN,  LOC_V_4,     IT_0,        -)

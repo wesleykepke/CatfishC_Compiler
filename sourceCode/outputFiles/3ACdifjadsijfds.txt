@@ -1,0 +1,37 @@
+	// int x;
+	// int y;
+Label_main
+	// void main(){
+	// 	int i = 1;
+		(  ASSIGN,  LOC_V_0,        1,        -)
+	// 	int a[3];
+	// 	int b[5][6];
+	// 	a[2] = i;
+		(    MULT,     IT_0,        2,        4)
+		(     ADD,     IT_1,  LOC_V_4,     IT_0)
+		(  ASSIGN,     IT_1,  LOC_V_0,        -)
+	// 	a[1] = a[2];
+		(    MULT,     IT_2,        1,        4)
+		(     ADD,     IT_3,  LOC_V_4,     IT_2)
+		(    MULT,     IT_4,        2,        4)
+		(     ADD,     IT_5,  LOC_V_4,     IT_4)
+		(  ASSIGN,     IT_3,     IT_5,        -)
+	// 	b[3][4] = i;
+		(    MULT,     IT_6,        3,        4)
+		(    MULT,     IT_7,     IT_6,        6)
+		(     ADD,     IT_8, LOC_V_16,     IT_7)
+		(    MULT,     IT_9,        4,        4)
+		(     ADD,    IT_10,     IT_8,     IT_9)
+		(  ASSIGN,    IT_10,  LOC_V_0,        -)
+	// 	b[2][0] = b[3][4];
+		(    MULT,    IT_11,        2,        4)
+		(    MULT,    IT_12,    IT_11,        6)
+		(     ADD,    IT_13, LOC_V_16,    IT_12)
+		(    MULT,    IT_14,        0,        4)
+		(     ADD,    IT_15,    IT_13,    IT_14)
+		(    MULT,    IT_16,        3,        4)
+		(    MULT,    IT_17,    IT_16,        6)
+		(     ADD,    IT_18, LOC_V_16,    IT_17)
+		(    MULT,    IT_19,        4,        4)
+		(     ADD,    IT_20,    IT_18,    IT_19)
+		(  ASSIGN,    IT_15,    IT_20,        -)

@@ -1,0 +1,37 @@
+Label_main
+	// {
+	// 	int swapped = 1;
+		(   ASSIGN   LOCV_0        1        - )
+	// 	int array[3];
+	// 	int i = 0; 
+		(   ASSIGN  LOCV_16        0        - )
+	// 	int temp = 0; 
+		(   ASSIGN  LOCV_20        0        - )
+	// 	array[0] = 4;
+		(     MULT     IT_0        0        4 )
+		(     ADDO     IT_1   LOCV_4     IT_0 )
+		(   ASSIGN     IT_1        4        - )
+	// 		array[1] = 66;
+		(     MULT     IT_2        1        4 )
+		(     ADDO     IT_3   LOCV_4     IT_2 )
+		(   ASSIGN     IT_3       66        - )
+	// 		array[2] = 1;
+		(     MULT     IT_4        2        4 )
+		(     ADDO     IT_5   LOCV_4     IT_4 )
+		(   ASSIGN     IT_5        1        - )
+	// 					temp = array[i];
+		(     MULT     IT_6  LOCV_16        4 )
+		(     ADDO     IT_7   LOCV_4     IT_6 )
+		(   ASSIGN  LOCV_20     IT_7        - )
+	// 					array[i] = array[i+1];
+		(     MULT     IT_8  LOCV_16        4 )
+		(     ADDO     IT_9   LOCV_4     IT_8 )
+		(      ADD    IT_10  LOCV_16        1 )
+		(     MULT    IT_11    IT_10        4 )
+		(     ADDO    IT_12   LOCV_4    IT_11 )
+		(   ASSIGN     IT_9    IT_12        - )
+	// 					array[i+1] = temp;
+		(      ADD    IT_13  LOCV_16        1 )
+		(     MULT    IT_14    IT_13        4 )
+		(     ADDO    IT_15   LOCV_4    IT_14 )
+		(   ASSIGN    IT_15  LOCV_20        - )

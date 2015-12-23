@@ -1,0 +1,16 @@
+	// int x;
+	// int y;
+Label_main
+	// void main(){
+	// 	int i = 1;
+		(  ASSIGN,  LOC_V_0,        1,        -)
+Label_0
+	// 	while( i < 2 )
+		(      LT,     IT_1,  LOC_V_0,        2)
+		(  ASSIGN,     IT_0,     IT_1,        -)
+		(    BREQ,     IT_0,        0,  Label_1)
+	// 		i++;
+		(     ADD,     IT_2,  LOC_V_0,        1)
+		(  ASSIGN,  LOC_V_0,     IT_2,        -)
+		(      BR,  Label_0,        -,        -)
+Label_1

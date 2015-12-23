@@ -1,0 +1,261 @@
+
+=================================================================
+Line #1: 
+
+
+=================================================================
+Line #2: 
+int main()
+type_specifier : INT;
+declaration_specifiers : type_specifier;
+direct_declarator : identifier;
+direct_declarator : direct_declarator LPAREN RPAREN;
+
+=================================================================
+Line #3: 
+{
+declarator : direct_declarator;
+
+=================================================================
+Line #4: 
+	// variables
+
+=================================================================
+Line #5: 
+	int num = 10;
+type_specifier : INT;
+declaration_specifiers : type_specifier;
+direct_declarator : identifier;
+declarator : direct_declarator;
+constant : INTEGER_CONSTANT;
+primary_expression : constant;
+postfix_expression : primary_expression;
+unary_expression : postfix_expression;
+cast_expression : unary_expression;
+multiplicative_expression : cast_expression;
+additive_expression : multiplicative_expression;
+shift_expression : additive_expression;
+relational_expression : shift_expression;
+equality_expression : relational_expression;
+and_expression : equality_expression;
+exclusive_or_expression : and_expression;
+inclusive_or_expression : exclusive_or_expression;
+logical_and_expression : inclusive_or_expression;
+logical_or_expression : logical_and_expression;
+conditional_expression : logical_or_expression;
+assignment_expression : conditional_expression;
+initializer : assignment_expression;
+init_declarator : declarator ASSIGN initializer;
+init_declarator_list : init_declarator;
+declaration : declaration_specifiers init_declarator_list SEMI;
+declaration_list : declaration;
+
+=================================================================
+Line #6: 
+	int fact;
+type_specifier : INT;
+declaration_specifiers : type_specifier;
+direct_declarator : identifier;
+declarator : direct_declarator;
+init_declarator : declarator;
+init_declarator_list : init_declarator;
+declaration : declaration_specifiers init_declarator_list SEMI;
+declaration_list : declaration_list declaration;
+
+=================================================================
+Line #7: 
+	int i; 
+type_specifier : INT;
+declaration_specifiers : type_specifier;
+direct_declarator : identifier;
+declarator : direct_declarator;
+init_declarator : declarator;
+init_declarator_list : init_declarator;
+declaration : declaration_specifiers init_declarator_list SEMI;
+declaration_list : declaration_list declaration;
+
+=================================================================
+Line #8: 
+	fact = num;
+primary_expression : identifier;
+postfix_expression : primary_expression;
+unary_expression : postfix_expression;
+assignment_operator : ASSIGN;
+primary_expression : identifier;
+postfix_expression : primary_expression;
+unary_expression : postfix_expression;
+cast_expression : unary_expression;
+multiplicative_expression : cast_expression;
+additive_expression : multiplicative_expression;
+shift_expression : additive_expression;
+relational_expression : shift_expression;
+equality_expression : relational_expression;
+and_expression : equality_expression;
+exclusive_or_expression : and_expression;
+inclusive_or_expression : exclusive_or_expression;
+logical_and_expression : inclusive_or_expression;
+logical_or_expression : logical_and_expression;
+conditional_expression : logical_or_expression;
+assignment_expression : conditional_expression;
+assignment_expression : unary_expression assignment_operator assignment_expression;
+expression : assignment_expression;
+expression_statement : expression SEMI;
+statement : expression_statement;
+statement_list : statement;
+
+=================================================================
+Line #9: 
+
+
+=================================================================
+Line #10: 
+	// solve factorial
+
+=================================================================
+Line #11: 
+	for( i = 1; i < num; i++)
+primary_expression : identifier;
+postfix_expression : primary_expression;
+unary_expression : postfix_expression;
+assignment_operator : ASSIGN;
+constant : INTEGER_CONSTANT;
+primary_expression : constant;
+postfix_expression : primary_expression;
+unary_expression : postfix_expression;
+cast_expression : unary_expression;
+multiplicative_expression : cast_expression;
+additive_expression : multiplicative_expression;
+shift_expression : additive_expression;
+relational_expression : shift_expression;
+equality_expression : relational_expression;
+and_expression : equality_expression;
+exclusive_or_expression : and_expression;
+inclusive_or_expression : exclusive_or_expression;
+logical_and_expression : inclusive_or_expression;
+logical_or_expression : logical_and_expression;
+conditional_expression : logical_or_expression;
+assignment_expression : conditional_expression;
+assignment_expression : unary_expression assignment_operator assignment_expression;
+expression : assignment_expression;
+primary_expression : identifier;
+postfix_expression : primary_expression;
+unary_expression : postfix_expression;
+cast_expression : unary_expression;
+multiplicative_expression : cast_expression;
+additive_expression : multiplicative_expression;
+shift_expression : additive_expression;
+relational_expression : shift_expression;
+primary_expression : identifier;
+postfix_expression : primary_expression;
+unary_expression : postfix_expression;
+cast_expression : unary_expression;
+multiplicative_expression : cast_expression;
+additive_expression : multiplicative_expression;
+shift_expression : additive_expression;
+relational_expression : relational_expression LTHAN shift_expression;
+equality_expression : relational_expression;
+and_expression : equality_expression;
+exclusive_or_expression : and_expression;
+inclusive_or_expression : exclusive_or_expression;
+logical_and_expression : inclusive_or_expression;
+logical_or_expression : logical_and_expression;
+conditional_expression : logical_or_expression;
+assignment_expression : conditional_expression;
+expression : assignment_expression;
+primary_expression : identifier;
+postfix_expression : primary_expression;
+postfix_expression : postfix_expression INC_OP;
+unary_expression : postfix_expression;
+cast_expression : unary_expression;
+multiplicative_expression : cast_expression;
+additive_expression : multiplicative_expression;
+shift_expression : additive_expression;
+relational_expression : shift_expression;
+equality_expression : relational_expression;
+and_expression : equality_expression;
+exclusive_or_expression : and_expression;
+inclusive_or_expression : exclusive_or_expression;
+logical_and_expression : inclusive_or_expression;
+logical_or_expression : logical_and_expression;
+conditional_expression : logical_or_expression;
+assignment_expression : conditional_expression;
+expression : assignment_expression;
+
+=================================================================
+Line #12: 
+	{	
+
+=================================================================
+Line #13: 
+		fact = i;
+primary_expression : identifier;
+postfix_expression : primary_expression;
+unary_expression : postfix_expression;
+assignment_operator : ASSIGN;
+primary_expression : identifier;
+postfix_expression : primary_expression;
+unary_expression : postfix_expression;
+cast_expression : unary_expression;
+multiplicative_expression : cast_expression;
+additive_expression : multiplicative_expression;
+shift_expression : additive_expression;
+relational_expression : shift_expression;
+equality_expression : relational_expression;
+and_expression : equality_expression;
+exclusive_or_expression : and_expression;
+inclusive_or_expression : exclusive_or_expression;
+logical_and_expression : inclusive_or_expression;
+logical_or_expression : logical_and_expression;
+conditional_expression : logical_or_expression;
+assignment_expression : conditional_expression;
+assignment_expression : unary_expression assignment_operator assignment_expression;
+expression : assignment_expression;
+expression_statement : expression SEMI;
+statement : expression_statement;
+statement_list : statement;
+
+=================================================================
+Line #14: 
+	}
+compound_statement : LCURL statement_list RCURL;
+statement : compound_statement;
+iteration_statement : FOR LPAREN expression SEMI expression SEMI expression RPAREN statement;
+statement : iteration_statement;
+statement_list : statement_list statement;
+
+=================================================================
+Line #15: 
+
+
+=================================================================
+Line #16: 
+	return 0;
+constant : INTEGER_CONSTANT;
+primary_expression : constant;
+postfix_expression : primary_expression;
+unary_expression : postfix_expression;
+cast_expression : unary_expression;
+multiplicative_expression : cast_expression;
+additive_expression : multiplicative_expression;
+shift_expression : additive_expression;
+relational_expression : shift_expression;
+equality_expression : relational_expression;
+and_expression : equality_expression;
+exclusive_or_expression : and_expression;
+inclusive_or_expression : exclusive_or_expression;
+logical_and_expression : inclusive_or_expression;
+logical_or_expression : logical_and_expression;
+conditional_expression : logical_or_expression;
+assignment_expression : conditional_expression;
+expression : assignment_expression;
+jump_statement : RETURN expression SEMI;
+statement : jump_statement;
+statement_list : statement_list statement;
+
+=================================================================
+Line #17: 
+}
+compound_statement : LCURL declaration_list statement_list RCURL;
+function_definition : declaration_specifiers declarator compound_statement;
+external_declaration : function_definition;
+translation_unit : external_declaration;

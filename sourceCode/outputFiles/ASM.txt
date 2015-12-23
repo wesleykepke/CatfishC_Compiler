@@ -1,0 +1,56 @@
+Label_main:
+#  {
+#  	int swapped = 1;
+		       lw      $s6   0($sp)
+		       li      $s6        1          
+#  	int array[3];
+#  	int i = 0; 
+		       lw      $s2  16($sp)
+		       li      $s2        0          
+#  	int temp = 0; 
+		       lw      $s0  20($sp)
+		       li      $s0        0          
+#  	array[0] = 4;
+		       li      $s5        0
+		      mul      $t7      $s5        4 
+		     addu      $a1      $sp        4 
+		     addu      $v1      $a1      $t7 
+		       li      $t8        4
+		       sw      $t8    ($v1)
+#  		array[1] = 66;
+		       li      $s3        1
+		      mul      $a3      $s3        4 
+		     addu      $a1      $sp        4 
+		     addu      $t3      $a1      $a3 
+		       li      $s7       66
+		       sw      $s7    ($t3)
+#  		array[2] = 1;
+		       li      $t0        2
+		      mul      $t4      $t0        4 
+		     addu      $a1      $sp        4 
+		     addu      $t2      $a1      $t4 
+		       li      $s4        1
+		       sw      $s4    ($t2)
+#  					temp = array[i];
+		      mul      $t5      $s2        4 
+		     addu      $a1      $sp        4 
+		     addu      $s1      $a1      $t5 
+		       lw      $s0    ($s1)
+#  					array[i] = array[i+1];
+		      mul      $t8      $s2        4 
+		     addu      $a1      $sp        4 
+		     addu      $s3      $a1      $t8 
+		      add      $a3      $s2        1 
+		      mul      $t3      $a3        4 
+		     addu      $a1      $sp        4 
+		     addu      $t1      $a1      $t3 
+		       lw      $t4    ($t1)
+		       sw      $t4    ($s3)
+#  					array[i+1] = temp;
+		      add      $t2      $s2        1 
+		      mul      $t5      $t2        4 
+		     addu      $a1      $sp        4 
+		     addu      $s1      $a1      $t5 
+		       sw      $s0    ($s1)
+li $v0 10
+syscall
